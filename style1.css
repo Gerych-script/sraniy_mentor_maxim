@@ -1,46 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* блять ты заебал я тебе говорил почитай сука вдумчиво все про блочную модель а потом верстай */
+}
+
+html{
+  font-size: 1.2755102040816vh; /* 1rem= 10px */
+  /* сделал привязку единиц измерения к высоте экрана */
+}
+
 body { 
     background-color:#c7b39b;
     
  }
 
  .cont {
+   position: relative;
+   top: 5rem;
     display: flex;
     text-align: center;
     flex-direction: row;
     justify-content: center;
-  
     background-color: #c9a982;
     margin: auto;
-    padding: 0px;
-    width: 85%;
+    width: 85vw;
+    border: 1px solid red;
+    height: 5rem;
     
  }
 
- a:hover {
+ .container:hover {
   background-color: #111;
-  
-    
-    
-  
+
 }
 
 a {
   color: white;
   text-align: center;
   text-decoration: none;
-  padding: 14px 16px;
-
 }
 
  .container {
     background-color:#c9a982;
      color: #FFFFFF;
-     width: 150px;
-     height: 25px;
-     padding: 20px;
-     margin: 10px;
-     
-     font-size: 20px;
+     width: 10.625vw; /* .cont width / 8 = 85 /8  (8 - navs number) */
+     height: 100%;
+     font-size: 2rem;
+     border: 1px solid green;
+     line-height: 5rem; /* for text vertial allignment */
      
  }
 
@@ -86,4 +94,17 @@ button:before {
 .logo {
     font-size: 20px;
     margin-left: 142px;
+}
+
+h1{
+  position: fixed;
+  top: 40vh;
+  left: 25vw;
+  font-size: 15rem;
+  transform: rotate(45deg);
+  color: transparent;
+}
+h1:hover{
+  visibility: visible;
+color: black;
 }
