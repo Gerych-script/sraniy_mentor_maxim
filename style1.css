@@ -1,46 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* блять ты заебал я тебе говорил почитай сука вдумчиво все про блочную модель а потом верстай */
+}
+
+html{
+  font-size: 1.2755102040816vh; /* 1rem= 10px */
+  /* сделал привязку единиц измерения к высоте экрана */
+}
+
 body { 
     background-color:#c7b39b;
     
  }
 
  .cont {
+   position: relative;
+   top: 5rem;
     display: flex;
     text-align: center;
     flex-direction: row;
     justify-content: center;
-  
     background-color: #c9a982;
     margin: auto;
-    padding: 0px;
-    width: 85%;
+    width: 85vw;
+    
+    height: 5rem;
     
  }
 
- a:hover {
+ .container:hover {
   background-color: #111;
-  
-    
-    
-  
+
 }
 
 a {
   color: white;
   text-align: center;
   text-decoration: none;
-  padding: 14px 16px;
-
 }
 
  .container {
     background-color:#c9a982;
      color: #FFFFFF;
-     width: 150px;
-     height: 25px;
-     padding: 20px;
-     margin: 10px;
+     width: 10.625vw; /* .cont width / 8 = 85 /8  (8 - navs number) */
+     height: 100%;
+     font-size: 2rem;
      
-     font-size: 20px;
+     line-height: 5rem; /* for text vertial allignment */
      
  }
 
@@ -51,9 +59,9 @@ a {
 form {
   position: absolute;
   width: 300px;
-  right: 10px;
-  top: 10px;
-  margin-right: 142px;
+  right: 136px;
+  top: 30px;
+  
 }
 input {
   width: 100%;
@@ -85,5 +93,180 @@ button:before {
 
 .logo {
     font-size: 20px;
-    margin-left: 142px;
+    margin-left: 136px;
+    margin-top: 30px;
+}
+
+
+
+.sidenav {
+  
+  width: 25rem; /* Установите ширину боковой панели */
+  position: fixed; /* Исправлена боковая панель (оставайтесь на месте при прокрутке) */
+  top: 20.3rem; /* Оставайтесь внизу */
+  left: 11rem;
+  background-color: #c9a982;
+  
+
+}
+
+/* Ссылки меню навигации */
+.sidenav a {
+  padding: 15px 12px 15px 18px;
+  text-align: left;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+}
+
+/* Когда вы наводите курсор мыши на навигационные ссылки, меняется их цвет */
+.sidenav a:hover {
+  background-color: #111;
+}
+
+.block {
+  font-size: 65px;
+  background-color: #111;
+  color: #fff;
+  display: block;
+  height: 20rem;
+  width: 101rem;
+  margin-left: 42rem;
+  margin-top: 11rem;
+  overflow: hidden;
+}
+
+/* Стилизация страницы content */
+.main {
+  font-size: 50px;
+
+  color: #fff;
+  display: block;
+  height: 35rem;
+  width: 101rem;
+  margin-left: 42rem;
+  margin-top: 11rem;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+
+}
+
+.photo {
+  color: #fff;
+  
+  height: 20rem;
+  width: 101rem;
+  margin-left: 42rem;
+  
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+margin-bottom: 3rem;
+}
+
+.qwe {
+  width: 45rem;
+  height: 25rem;
+  overflow: hidden;
+}
+
+
+.ewq {
+  width: 45rem;
+  height: 25rem;
+}
+
+.team {
+  font-size: 65px;
+  background-color: #111;
+  color: #fff;
+  display: block;
+  height: 5rem;
+  width: 101rem;
+  margin-left: 42rem;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.img-team {
+
+  
+  color: #fff;
+  
+  height: 20rem;
+  width: 101rem;
+  margin-left: 42rem;
+  
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+}
+
+.asd {
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden;
+  
+  text-align: center;
+  font-size: 20px;
+  
+  color: rgb(5, 0, 0);
+  
+}
+
+.img-team1 {
+  
+  
+  color: #fff;
+  margin-bottom: 10rem;
+  height: 20rem;
+  width: 101rem;
+  margin-left: 42rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+}
+
+.dsa {
+  width: 15rem;
+  height: 12rem;
+}
+
+footer {
+  
+    
+    padding: 3rem; /* Поля вокруг текста */
+    background: #39b54a; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+    
+    position: relative;
+}
+
+.office {
+  width: 25rem;
+  height:20rem;
+  overflow: hidden;
+  margin-left: 11rem;
+  margin-top: 10rem;
+  position: fixed;
+  border: solid 5px #c9a982;
+  text-align: center;
+  font-size: 20px;
+  background-color: #c9a982;
+  color: #FFF;
+  
+  
+
+}
+
+.img {
+  
+  width: 25rem;
+  height: 20rem;
+  
 }
